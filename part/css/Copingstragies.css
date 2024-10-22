@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2f9;
+    display: flex;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a.active {
+    color: #007bff;
+}
+
+.sidebar nav ul li a:hover {
+    color: #007bff;
+}
+
+.sidebar .resources h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4e6b6b;
+    font-weight: bold;
+}
+
+.sidebar .resources ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.sidebar .resources ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Main Content */
+main {
+    margin-left: 270px;
+    padding: 90px 30px 20px 30px;
+    flex-grow: 1;
+    background-color: #f0f4f8;
+}
+/* General container styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Section styles */
+.post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.post:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Post content layout */
+.post-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.post-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.post-text {
+    flex-grow: 1;
+    font-size: 1em;
+    color: #555;
+}
+
+.post-text strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Steps list */
+.post-text ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.post-text ol li {
+    margin-bottom: 10px;
+}
+
+/* Read more link */
+.read-more {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    #sidebarh3 {
+      margin-top: 0px; 
+    }
+  }
